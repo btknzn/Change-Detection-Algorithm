@@ -1,0 +1,59 @@
+# FindDiff Application#
+## Required software and toolboxes ##
+
+> download MATLAB_R2021a by following the steps from https://syncandshare.lrz.de/dl/fiC8Bbg6NUXLbTu9CL5b1Yg4/TAH_HowTo.pdf or from https://de.mathworks.com
+
+> install the preprocessing , the computer vision , and the statistics and machine learning toolboxes.
+
+
+## Application usage ##
+
+> open "group32" folder 
+
+> extract everything and import datasets from moodle in the same folder
+
+> open appcvversion2.mlapp file
+
+> chose between detect changes on 2 images or the whole dataset
+
+> click on import to give the path of the image
+
+> select from the "Apply the algorithm" options
+
+> Select Mode of visualtisation: 
+
+1. Difference-Highlights: Highlight changes in a green color on top of one of the chosen images
+
+2. Gray-scale: Get a change map only in grayscale
+
+3. Time-lapse (only applicable for choosing Dataset in the first step): ALlgorithm goes through the whole dataset and produces a video with highlighted changes in all pairs of images
+
+> If available set the slider to desired value
+
+> Select Mode of change:
+
+1. city/countryside: City option finds changes in the datasets with cities and countryside option respectively
+
+2. large/small: detect larger or smaller changes in the images 
+
+3. quick/slow: Quick option detects changes in images with a small gap of years and slow option with a bigger gap respectively
+
+4. with preprocessing: If applied, preprocessing is used on images before the change detection algorithm
+
+> If available set the slider to desired value (100 is optimal for pca parameters)
+
+> Click "Apply" Button
+
+> You can see the result in the result section alongside with a report of the methods used, mode of visualisation and mode of change
+
+> If the whole set is imported, you can control the images using the slider in the results box
+
+> You can export the resulting images in different formats
+
+NB: please wait until the execution of the program is terminated before changing settings (until you can see the output in the results box)
+
+NB: It is recommended for better results to use PCA K-means as well as image differencing with the optimal (default) paramteres, otherwise execution time or results will be suboptimal
+
+NB: Results may differ according to the order of the selected images. (Change order if performance is poor)
+
+[1] rulixiang.Changedetectionpcakmeans.https://github.com/rulixiang/ChangeDetectionPCAKmeans, 2019 [accessed on 30.06.2021].
