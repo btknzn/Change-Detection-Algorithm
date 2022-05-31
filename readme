@@ -57,4 +57,4 @@ NB: It is recommended for better results to use PCA K-means as well as image dif
 
 NB: Results may differ according to the order of the selected images. (Change order if performance is poor)
 
-[1] rulixiang.Changedetectionpcakmeans.https://github.com/rulixiang/ChangeDetectionPCAKmeans, 2019 [accessed on 30.06.2021].
+
